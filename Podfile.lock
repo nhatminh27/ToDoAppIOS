@@ -1,0 +1,48 @@
+PODS:
+  - EachNavigationBar (1.12.0)
+  - ESTabBarController-swift (2.7)
+  - pop (1.0.12)
+  - SideMenu (5.0.3)
+  - SnapKit (5.0.0)
+  - SwiftLint (0.32.0)
+  - SwiftyJSON (4.3.0)
+  - SwiftyUserDefaults (4.0.0)
+  - UIColor_Hex_Swift (5.1.0)
+
+DEPENDENCIES:
+  - EachNavigationBar
+  - ESTabBarController-swift
+  - pop (~> 1.0)
+  - SideMenu
+  - SnapKit (~> 5.0.0)
+  - SwiftLint
+  - SwiftyJSON (~> 4.3.0)
+  - SwiftyUserDefaults (~> 4.0)
+  - UIColor_Hex_Swift (~> 5.1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - EachNavigationBar
+    - ESTabBarController-swift
+    - pop
+    - SideMenu
+    - SnapKit
+    - SwiftLint
+    - SwiftyJSON
+    - SwiftyUserDefaults
+    - UIColor_Hex_Swift
+
+SPEC CHECKSUMS:
+  EachNavigationBar: 6685463667ee539eb336d39194add8aba045c64c
+  ESTabBarController-swift: 4fb52ad03d94d0717ef97bc9eb09a5abfdded0a2
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  SideMenu: 1dcaabce84538c53325c287f7fe62999379a641c
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  SwiftyUserDefaults: 6a1951df1daa19337862b677dd9a4b9bd4c288cd
+  UIColor_Hex_Swift: 8be7432edacb7fa91c78aa05ef3c30b66e4f9415
+
+PODFILE CHECKSUM: 78ccbeac3fc7f784c89f003ee30078f839256462
+
+COCOAPODS: 1.6.2

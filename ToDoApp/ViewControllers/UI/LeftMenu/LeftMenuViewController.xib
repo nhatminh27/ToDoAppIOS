@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirLTStd-Black.otf">
+            <string>AvenirLTStd-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeftMenuViewController" customModule="ToDoApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSs-tP-Bgx" userLabel="Header View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e8a-0n-ufx" userLabel="Avatar Image View">
+                            <rect key="frame" x="16" y="39" width="65" height="65"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="65" id="D2U-UH-qQh"/>
+                                <constraint firstAttribute="height" constant="65" id="dPS-Gh-eLD"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zO7-zC-7tY">
+                            <rect key="frame" x="97" y="39" width="301" height="65"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiffany" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsK-Re-r4k">
+                                    <rect key="frame" x="0.0" y="19.666666666666664" width="84" height="26"/>
+                                    <fontDescription key="fontDescription" name="AvenirLTStd-Black" family="Avenir LT Std" pointSize="26"/>
+                                    <color key="textColor" red="0.14199984069999999" green="0.23192146420000001" blue="0.41996979709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="VsK-Re-r4k" firstAttribute="centerY" secondItem="zO7-zC-7tY" secondAttribute="centerY" id="BCr-gp-p8O"/>
+                                <constraint firstItem="VsK-Re-r4k" firstAttribute="leading" secondItem="zO7-zC-7tY" secondAttribute="leading" id="aXm-MM-GMC"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.16078431369999999" green="0.60238776409999994" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="5n2-ND-3z6"/>
+                        <constraint firstAttribute="bottom" secondItem="e8a-0n-ufx" secondAttribute="bottom" constant="16" id="BwU-B2-oGs"/>
+                        <constraint firstAttribute="trailing" secondItem="zO7-zC-7tY" secondAttribute="trailing" constant="16" id="cnz-Bz-WXR"/>
+                        <constraint firstItem="e8a-0n-ufx" firstAttribute="leading" secondItem="qSs-tP-Bgx" secondAttribute="leading" constant="16" id="e3c-vX-m4h"/>
+                        <constraint firstItem="zO7-zC-7tY" firstAttribute="bottom" secondItem="e8a-0n-ufx" secondAttribute="bottom" id="gvU-ry-YjM"/>
+                        <constraint firstItem="zO7-zC-7tY" firstAttribute="top" secondItem="e8a-0n-ufx" secondAttribute="top" id="qPX-aJ-ruN"/>
+                        <constraint firstItem="zO7-zC-7tY" firstAttribute="leading" secondItem="e8a-0n-ufx" secondAttribute="trailing" constant="16" id="xgu-LP-YIq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qSs-tP-Bgx" secondAttribute="trailing" id="jNX-HJ-h7l"/>
+                <constraint firstItem="qSs-tP-Bgx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oHO-oA-KIz"/>
+                <constraint firstItem="qSs-tP-Bgx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tPG-tK-XLi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="135.9375"/>
+        </view>
+    </objects>
+</document>
