@@ -53,7 +53,7 @@ class MainViewController: ESTabBarController {
         let navAlert = UINavigationController(rootViewController: alert)
         
         let profile = ProfileViewController()
-        profile.tabBarItem = ESTabBarItem(IrregularityBasicContentView(), title: nil, image: UIImage(named: "ic_people"), selectedImage: UIImage(named: "ic_people_selected"))
+        profile.tabBarItem = ESTabBarItem(IrregularityBasicContentView(), title: nil, image: UIImage(named: "ic_people"), selectedImage: UIImage(named: "ic_profile_selected"))
         let navProfile = UINavigationController(rootViewController: profile)
         
         self.viewControllers = [navToday, navUpcoming, plus, navAlert, navProfile]
