@@ -28,11 +28,11 @@ class LoginViewController: UIViewController {
 
         setupButton()
         
-        let imageView = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: 20, height: 20))
-        let icon = UIImage(named: "ic_eye_password")
-        imageView.image = icon
-        passwordTextField.rightViewMode = .always
-        passwordTextField.rightView = imageView
+        //let imageView = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: 20, height: 20))
+        //let icon = UIImage(named: "ic_eye_password")
+        //imageView.image = icon
+        //passwordTextField.rightViewMode = .always
+        //passwordTextField.rightView = imageView
         
     }
 
