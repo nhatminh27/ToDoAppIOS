@@ -15,7 +15,17 @@
 		DD04518D229E790B00307749 /* LeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD04518B229E790B00307749 /* LeftMenuViewController.xib */; };
 		DD045191229E854100307749 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD045190229E854100307749 /* UIViewController+Extension.swift */; };
 		DD045193229E8A3A00307749 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD045192229E8A3A00307749 /* MainViewController.swift */; };
-		DD045195229E90C000307749 /* ExampleIrregularityContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD045194229E90C000307749 /* ExampleIrregularityContentView.swift */; };
+		DD0F5895229F8C1900F00133 /* LeftMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F5893229F8C1900F00133 /* LeftMenuTableViewCell.swift */; };
+		DD0F5896229F8C1900F00133 /* LeftMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD0F5894229F8C1900F00133 /* LeftMenuTableViewCell.xib */; };
+		DD0F5898229F97C500F00133 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F5897229F97C500F00133 /* UITableView+Extension.swift */; };
+		DD0F589A229F9B0700F00133 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F5899229F9B0700F00133 /* UIView+Extension.swift */; };
+		DD0F589F229FB58300F00133 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F589C229FB58200F00133 /* BaseNavigationController.swift */; };
+		DD0F58A0229FB58300F00133 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F589D229FB58200F00133 /* BaseViewController.swift */; };
+		DD0F58A1229FB58300F00133 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F589E229FB58200F00133 /* TabBarViewController.swift */; };
+		DD0F58A3229FB75200F00133 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F58A2229FB75200F00133 /* UIAlertController+Extension.swift */; };
+		DD0F58A7229FD44600F00133 /* TodayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F58A5229FD44600F00133 /* TodayTableViewCell.swift */; };
+		DD0F58A8229FD44600F00133 /* TodayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD0F58A6229FD44600F00133 /* TodayTableViewCell.xib */; };
+		DD0F58AA229FE54500F00133 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F58A9229FE54500F00133 /* CheckBox.swift */; };
 		DD51356B229CDE6E00F95D3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD51356A229CDE6E00F95D3E /* Assets.xcassets */; };
 		DD51356E229CDE6E00F95D3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD51356C229CDE6E00F95D3E /* LaunchScreen.storyboard */; };
 		DD513581229CE07600F95D3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD513580229CE07600F95D3E /* AppDelegate.swift */; };
@@ -56,7 +66,17 @@
 		DD04518B229E790B00307749 /* LeftMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftMenuViewController.xib; sourceTree = "<group>"; };
 		DD045190229E854100307749 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		DD045192229E8A3A00307749 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		DD045194229E90C000307749 /* ExampleIrregularityContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleIrregularityContentView.swift; sourceTree = "<group>"; };
+		DD0F5893229F8C1900F00133 /* LeftMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuTableViewCell.swift; sourceTree = "<group>"; };
+		DD0F5894229F8C1900F00133 /* LeftMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftMenuTableViewCell.xib; sourceTree = "<group>"; };
+		DD0F5897229F97C500F00133 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		DD0F5899229F9B0700F00133 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		DD0F589C229FB58200F00133 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		DD0F589D229FB58200F00133 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DD0F589E229FB58200F00133 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		DD0F58A2229FB75200F00133 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
+		DD0F58A5229FD44600F00133 /* TodayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTableViewCell.swift; sourceTree = "<group>"; };
+		DD0F58A6229FD44600F00133 /* TodayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayTableViewCell.xib; sourceTree = "<group>"; };
+		DD0F58A9229FE54500F00133 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		DD513560229CDE6C00F95D3E /* ToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD51356A229CDE6E00F95D3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD51356D229CDE6E00F95D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -123,7 +143,7 @@
 				DD045183229E41D500307749 /* IrregularityBasicContentView.swift */,
 				DD045185229E425500307749 /* BouncesContentView.swift */,
 				DD045187229E428000307749 /* BasicContentView.swift */,
-				DD045194229E90C000307749 /* ExampleIrregularityContentView.swift */,
+				DD0F58A9229FE54500F00133 /* CheckBox.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -131,6 +151,7 @@
 		DD045189229E78F300307749 /* LeftMenu */ = {
 			isa = PBXGroup;
 			children = (
+				DD0F5892229F8BF100F00133 /* Cell */,
 				DD04518A229E790B00307749 /* LeftMenuViewController.swift */,
 				DD04518B229E790B00307749 /* LeftMenuViewController.xib */,
 			);
@@ -140,9 +161,40 @@
 		DD04518F229E852700307749 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				DD0F58A2229FB75200F00133 /* UIAlertController+Extension.swift */,
+				DD0F5899229F9B0700F00133 /* UIView+Extension.swift */,
 				DD045190229E854100307749 /* UIViewController+Extension.swift */,
+				DD0F5897229F97C500F00133 /* UITableView+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DD0F5892229F8BF100F00133 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DD0F5893229F8C1900F00133 /* LeftMenuTableViewCell.swift */,
+				DD0F5894229F8C1900F00133 /* LeftMenuTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DD0F589B229FB58200F00133 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DD0F589C229FB58200F00133 /* BaseNavigationController.swift */,
+				DD0F589D229FB58200F00133 /* BaseViewController.swift */,
+				DD0F589E229FB58200F00133 /* TabBarViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DD0F58A4229FD42F00F00133 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DD0F58A5229FD44600F00133 /* TodayTableViewCell.swift */,
+				DD0F58A6229FD44600F00133 /* TodayTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		DD513557229CDE6C00F95D3E = {
@@ -181,6 +233,7 @@
 		DD513575229CDF5B00F95D3E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				DD0F589B229FB58200F00133 /* Base */,
 				DD513576229CDF6C00F95D3E /* UI */,
 			);
 			path = ViewControllers;
@@ -257,6 +310,7 @@
 		DDF32751229D351500E2750E /* Today */ = {
 			isa = PBXGroup;
 			children = (
+				DD0F58A4229FD42F00F00133 /* Cell */,
 				DDF32752229D352700E2750E /* TodayViewController.swift */,
 				DDF32753229D352700E2750E /* TodayViewController.xib */,
 			);
@@ -363,11 +417,13 @@
 				DD5135B4229CF67300F95D3E /* AvenirLTStd-BlackOblique.otf in Resources */,
 				DD51356E229CDE6E00F95D3E /* LaunchScreen.storyboard in Resources */,
 				DD5135B5229CF67300F95D3E /* AvenirLTStd-BookOblique.otf in Resources */,
+				DD0F5896229F8C1900F00133 /* LeftMenuTableViewCell.xib in Resources */,
 				DD51356B229CDE6E00F95D3E /* Assets.xcassets in Resources */,
 				DD5135BA229CF67300F95D3E /* AvenirLTStd-Oblique.otf in Resources */,
 				DD5135B6229CF67300F95D3E /* AvenirLTStd-HeavyOblique.otf in Resources */,
 				DD5135BE229CF67300F95D3E /* AvenirLTStd-Medium.otf in Resources */,
 				DD5135BC229CF67300F95D3E /* AvenirLTStd-Book.otf in Resources */,
+				DD0F58A8229FD44600F00133 /* TodayTableViewCell.xib in Resources */,
 				DD5135A4229CF46F00F95D3E /* RegisterViewController.xib in Resources */,
 				DD5135B8229CF67300F95D3E /* AvenirLTStd-MediumOblique.otf in Resources */,
 				DD5135BD229CF67300F95D3E /* AvenirLTStd-LightOblique.otf in Resources */,
@@ -386,6 +442,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ToDoApp/Pods-ToDoApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
 				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/EachNavigationBar/EachNavigationBar.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
@@ -399,6 +456,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EachNavigationBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
@@ -444,16 +502,24 @@
 			files = (
 				DD045191229E854100307749 /* UIViewController+Extension.swift in Sources */,
 				DD045193229E8A3A00307749 /* MainViewController.swift in Sources */,
+				DD0F589A229F9B0700F00133 /* UIView+Extension.swift in Sources */,
+				DD0F5898229F97C500F00133 /* UITableView+Extension.swift in Sources */,
 				DD045184229E41D500307749 /* IrregularityBasicContentView.swift in Sources */,
+				DD0F58A0229FB58300F00133 /* BaseViewController.swift in Sources */,
+				DD0F58A3229FB75200F00133 /* UIAlertController+Extension.swift in Sources */,
 				DDF32759229D3A8800E2750E /* UpcomingViewController.swift in Sources */,
 				DD5135A3229CF46F00F95D3E /* RegisterViewController.swift in Sources */,
 				DD045188229E428000307749 /* BasicContentView.swift in Sources */,
-				DD045195229E90C000307749 /* ExampleIrregularityContentView.swift in Sources */,
+				DD0F58A7229FD44600F00133 /* TodayTableViewCell.swift in Sources */,
 				DDF3275E229D3AAE00E2750E /* AlertsViewController.swift in Sources */,
 				DD513584229CE4AC00F95D3E /* LoginViewController.swift in Sources */,
 				DD045186229E425500307749 /* BouncesContentView.swift in Sources */,
+				DD0F58AA229FE54500F00133 /* CheckBox.swift in Sources */,
+				DD0F5895229F8C1900F00133 /* LeftMenuTableViewCell.swift in Sources */,
+				DD0F58A1229FB58300F00133 /* TabBarViewController.swift in Sources */,
 				DD04518C229E790B00307749 /* LeftMenuViewController.swift in Sources */,
 				DDF32754229D352700E2750E /* TodayViewController.swift in Sources */,
+				DD0F589F229FB58300F00133 /* BaseNavigationController.swift in Sources */,
 				DD513581229CE07600F95D3E /* AppDelegate.swift in Sources */,
 				DDF32763229D3AC800E2750E /* ProfileViewController.swift in Sources */,
 			);

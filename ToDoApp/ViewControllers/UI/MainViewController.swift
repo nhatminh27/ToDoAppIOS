@@ -36,7 +36,6 @@ class MainViewController: ESTabBarController {
             [weak tabBarController] tabbarController, viewController, index in
         }
         
-//        self.tabBar.backgroundImage = UIImage(named: "bg_tabbar")
         let today = TodayViewController()
         today.tabBarItem = ESTabBarItem(IrregularityBasicContentView(), title: nil, image: UIImage(named: "ic_list"), selectedImage: UIImage(named: "ic_list_selected"))
         let navToday = UINavigationController(rootViewController: today)
@@ -45,8 +44,8 @@ class MainViewController: ESTabBarController {
         upcoming.tabBarItem = ESTabBarItem(IrregularityBasicContentView(), title: nil, image: UIImage(named: "ic_clock"), selectedImage: UIImage(named: "ic_clock_selected"))
         let navUpcoming = UINavigationController(rootViewController: upcoming)
         
-        let plus = UpcomingViewController()
-        plus.tabBarItem = ESTabBarItem(ExampleIrregularityContentView(), title: nil, image: UIImage(named: "ic_plus"), selectedImage: UIImage(named: "ic_plus"))
+        let plus = UIViewController()
+        plus.tabBarItem = ESTabBarItem(IrregularityContentView(), title: nil, image: UIImage(named: "ic_plus"), selectedImage: UIImage(named: "ic_plus"))
         
         let alert = AlertsViewController()
         alert.tabBarItem = ESTabBarItem(IrregularityBasicContentView(), title: nil, image: UIImage(named: "ic_bell"), selectedImage: UIImage(named: "ic_bell_selected"))

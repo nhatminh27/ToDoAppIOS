@@ -8,12 +8,20 @@
 
 import UIKit
 
-class UpcomingViewController: UIViewController {
+class UpcomingViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationItem.title = "SCHEDULER"
     }
+    
+}
 
+extension UpcomingViewController {
+    
+    override func setUpUI() {
+        self.navigationItem.title = "SCHEDULER"
+        showMenuButton()
+        showSearchButton()
+    }
+    
 }

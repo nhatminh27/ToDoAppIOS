@@ -1,4 +1,5 @@
 PODS:
+  - DLRadioButton (1.4.12)
   - EachNavigationBar (1.12.0)
   - ESTabBarController-swift (2.7)
   - pop (1.0.12)
@@ -10,6 +11,7 @@ PODS:
   - UIColor_Hex_Swift (5.1.0)
 
 DEPENDENCIES:
+  - DLRadioButton (~> 1.4)
   - EachNavigationBar
   - ESTabBarController-swift
   - pop (~> 1.0)
@@ -22,6 +24,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - DLRadioButton
     - EachNavigationBar
     - ESTabBarController-swift
     - pop
@@ -33,6 +36,7 @@ SPEC REPOS:
     - UIColor_Hex_Swift
 
 SPEC CHECKSUMS:
+  DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
   EachNavigationBar: 6685463667ee539eb336d39194add8aba045c64c
   ESTabBarController-swift: 4fb52ad03d94d0717ef97bc9eb09a5abfdded0a2
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
@@ -43,6 +47,6 @@ SPEC CHECKSUMS:
   SwiftyUserDefaults: 6a1951df1daa19337862b677dd9a4b9bd4c288cd
   UIColor_Hex_Swift: 8be7432edacb7fa91c78aa05ef3c30b66e4f9415
 
-PODFILE CHECKSUM: 78ccbeac3fc7f784c89f003ee30078f839256462
+PODFILE CHECKSUM: 69e9bf6c7dce516c7142aa5fef71e50966536f2e
 
 COCOAPODS: 1.6.2

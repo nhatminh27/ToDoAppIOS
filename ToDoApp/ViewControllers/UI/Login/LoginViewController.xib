@@ -20,8 +20,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="ToDoApp" customModuleProvider="target">
             <connections>
+                <outlet property="emailView" destination="eK4-GK-E2S" id="UgW-1j-Avh"/>
                 <outlet property="forgotButton" destination="p0R-2o-2S2" id="dnR-u9-UJ3"/>
                 <outlet property="loginButton" destination="qQB-ig-yXf" id="g0G-Rx-9Qs"/>
+                <outlet property="passwordView" destination="JAB-fW-0cU" id="myR-ZG-Sog"/>
                 <outlet property="registerButton" destination="aqb-K9-7ha" id="n7f-8u-Y85"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -49,24 +51,34 @@
                             <color key="textColor" red="0.14117647059999999" green="0.23137254900000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n0s-OW-AE5" userLabel="Email Text Field">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eK4-GK-E2S" userLabel="Email Text Field View">
                             <rect key="frame" x="0.0" y="24" width="354" height="50"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2y9-3M-joI">
+                                    <rect key="frame" x="8" y="0.0" width="338" height="50"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" name="AvenirLTStd-Book" family="Avenir LT Std" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="50" id="0dR-a2-Cc3"/>
+                                <constraint firstAttribute="trailing" secondItem="2y9-3M-joI" secondAttribute="trailing" constant="8" id="Bn9-jY-8PS"/>
+                                <constraint firstItem="2y9-3M-joI" firstAttribute="top" secondItem="eK4-GK-E2S" secondAttribute="top" id="dSJ-ef-OJK"/>
+                                <constraint firstItem="2y9-3M-joI" firstAttribute="leading" secondItem="eK4-GK-E2S" secondAttribute="leading" constant="8" id="dfm-as-K8l"/>
+                                <constraint firstAttribute="bottom" secondItem="2y9-3M-joI" secondAttribute="bottom" id="eVM-yp-Bdn"/>
+                                <constraint firstAttribute="height" constant="50" id="n5u-qU-sci"/>
                             </constraints>
-                            <color key="textColor" red="0.14117647059999999" green="0.23137254900000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="n0s-OW-AE5" secondAttribute="bottom" id="FnQ-gY-cwt"/>
                         <constraint firstItem="vX3-kc-UQQ" firstAttribute="top" secondItem="F7A-CM-q4P" secondAttribute="top" id="G6E-Pf-SBn"/>
-                        <constraint firstItem="n0s-OW-AE5" firstAttribute="top" secondItem="vX3-kc-UQQ" secondAttribute="bottom" constant="4" id="RGE-1d-A2d"/>
-                        <constraint firstAttribute="trailing" secondItem="n0s-OW-AE5" secondAttribute="trailing" id="TDf-LA-rm6"/>
-                        <constraint firstItem="n0s-OW-AE5" firstAttribute="leading" secondItem="F7A-CM-q4P" secondAttribute="leading" id="UUO-3H-FLY"/>
+                        <constraint firstItem="eK4-GK-E2S" firstAttribute="leading" secondItem="F7A-CM-q4P" secondAttribute="leading" id="JJY-ca-RsN"/>
+                        <constraint firstAttribute="bottom" secondItem="eK4-GK-E2S" secondAttribute="bottom" id="QOf-zr-G0C"/>
+                        <constraint firstItem="eK4-GK-E2S" firstAttribute="top" secondItem="vX3-kc-UQQ" secondAttribute="bottom" constant="4" id="kE0-Az-rOz"/>
                         <constraint firstItem="vX3-kc-UQQ" firstAttribute="leading" secondItem="F7A-CM-q4P" secondAttribute="leading" id="lNf-z1-7ib"/>
+                        <constraint firstAttribute="trailing" secondItem="eK4-GK-E2S" secondAttribute="trailing" id="qM9-q5-jWm"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9v-RI-qFK" userLabel="Password View">
@@ -103,9 +115,9 @@
                                     <state key="normal" image="ic_eye_password"/>
                                 </button>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cC1-4Q-gzH">
-                                    <rect key="frame" x="0.0" y="0.0" width="318" height="50"/>
-                                    <nil key="textColor"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <rect key="frame" x="8" y="0.0" width="310" height="50"/>
+                                    <color key="textColor" red="0.14199984069999999" green="0.23192146420000001" blue="0.41996979709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                             </subviews>
@@ -116,7 +128,7 @@
                                 <constraint firstItem="cC1-4Q-gzH" firstAttribute="top" secondItem="JAB-fW-0cU" secondAttribute="top" id="ZXl-KN-psA"/>
                                 <constraint firstAttribute="bottom" secondItem="cC1-4Q-gzH" secondAttribute="bottom" id="cDM-98-aHC"/>
                                 <constraint firstItem="3k8-Qj-AZh" firstAttribute="centerY" secondItem="JAB-fW-0cU" secondAttribute="centerY" id="oVe-32-m50"/>
-                                <constraint firstItem="cC1-4Q-gzH" firstAttribute="leading" secondItem="JAB-fW-0cU" secondAttribute="leading" id="r3D-ia-stU"/>
+                                <constraint firstItem="cC1-4Q-gzH" firstAttribute="leading" secondItem="JAB-fW-0cU" secondAttribute="leading" constant="8" id="r3D-ia-stU"/>
                                 <constraint firstAttribute="height" constant="50" id="uLV-Hb-FSX"/>
                             </constraints>
                         </view>

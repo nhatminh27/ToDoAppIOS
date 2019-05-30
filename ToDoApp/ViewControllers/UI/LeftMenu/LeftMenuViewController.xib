@@ -17,6 +17,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeftMenuViewController" customModule="ToDoApp" customModuleProvider="target">
             <connections>
+                <outlet property="avatarImageView" destination="e8a-0n-ufx" id="QW8-AU-89s"/>
+                <outlet property="menuTableView" destination="KnF-04-P4J" id="lb4-ed-rLe"/>
+                <outlet property="titleLabel" destination="VsK-Re-r4k" id="TuM-29-a8u"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -52,7 +55,7 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" red="0.16078431369999999" green="0.60238776409999994" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="120" id="5n2-ND-3z6"/>
                         <constraint firstAttribute="bottom" secondItem="e8a-0n-ufx" secondAttribute="bottom" constant="16" id="BwU-B2-oGs"/>
@@ -63,12 +66,30 @@
                         <constraint firstItem="zO7-zC-7tY" firstAttribute="leading" secondItem="e8a-0n-ufx" secondAttribute="trailing" constant="16" id="xgu-LP-YIq"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="liG-sq-Fs9" userLabel="Line View">
+                    <rect key="frame" x="0.0" y="120" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Knz-9d-1iF"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KnF-04-P4J">
+                    <rect key="frame" x="0.0" y="137" width="414" height="709"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="liG-sq-Fs9" secondAttribute="trailing" id="8D3-iK-My3"/>
+                <constraint firstItem="KnF-04-P4J" firstAttribute="top" secondItem="liG-sq-Fs9" secondAttribute="bottom" constant="16" id="HsB-KC-Mxu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="KnF-04-P4J" secondAttribute="bottom" constant="16" id="N5s-r4-7wK"/>
+                <constraint firstItem="liG-sq-Fs9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZCM-0I-xS9"/>
+                <constraint firstItem="KnF-04-P4J" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fW8-5D-fwA"/>
                 <constraint firstAttribute="trailing" secondItem="qSs-tP-Bgx" secondAttribute="trailing" id="jNX-HJ-h7l"/>
+                <constraint firstItem="liG-sq-Fs9" firstAttribute="top" secondItem="qSs-tP-Bgx" secondAttribute="bottom" id="nsX-nM-dqW"/>
                 <constraint firstItem="qSs-tP-Bgx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oHO-oA-KIz"/>
                 <constraint firstItem="qSs-tP-Bgx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tPG-tK-XLi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KnF-04-P4J" secondAttribute="trailing" id="wqf-Wp-4jD"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="131.8840579710145" y="135.9375"/>

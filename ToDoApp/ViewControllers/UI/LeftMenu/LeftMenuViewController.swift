@@ -9,22 +9,70 @@
 import UIKit
 
 class LeftMenuViewController: UIViewController {
+    
+    @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var menuTableView: UITableView!
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    private var menuItems = [
+        "To-do",
+        "Scheduler",
+        "Notifications",
+        "Profile",
+        "Logout"
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setUpUI()
+        setupMenuView()
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
+extension LeftMenuViewController {
+    
+    private func setUpUI() {
+        self.avatarImageView.layer.cornerRadius = self.avatarImageView.bounds.height * 0.5
+        self.avatarImageView.clipsToBounds = true
+    }
+    
+    private func setupMenuView() {
+        self.menuTableView.registerCustomCell(LeftMenuTableViewCell.self, fromNib: true)
+        self.menuTableView.dataSource = self
+        self.menuTableView.delegate = self
+        self.menuTableView.separatorStyle = .none
+        self.menuTableView.estimatedRowHeight = 44.0
+        self.menuTableView.rowHeight = UITableView.automaticDimension
+        self.menuTableView.separatorStyle = .none
+    }
+}
+
+extension LeftMenuViewController: UITableViewDataSource, UITableViewDelegate {
+ 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.menuItems.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueCustomCell(LeftMenuTableViewCell.self)
+        cell?.setData(self.menuItems[indexPath.row])
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+       
+//        switch indexPath.row {
+//        case 0:
+//        case 1:
+//        case 2:
+//        default:
+//            break
+//        }
+        dismiss(animated: true, completion: nil)
+    }
+    
+}
+

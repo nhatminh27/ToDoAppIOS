@@ -15,8 +15,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var forgotButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
-    @IBOutlet weak var passwordTextField: UITextField!
-
+    @IBOutlet weak var passwordView: UIView!
+    @IBOutlet weak var emailView: UIView!
     
     class func create() -> LoginViewController {
         let controller = LoginViewController(nibName: "LoginViewController", bundle: nil)
@@ -26,13 +26,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupButton()
-        
-        //let imageView = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: 20, height: 20))
-        //let icon = UIImage(named: "ic_eye_password")
-        //imageView.image = icon
-        //passwordTextField.rightViewMode = .always
-        //passwordTextField.rightView = imageView
+        setupView()
         
     }
 
@@ -40,8 +34,8 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController {
     
-    func setupButton() {
-        loginButton.layer.cornerRadius = 5
+    func setupView() {
+        loginButton.layer.cornerRadius = 7
         
         let attrs = [
             NSAttributedString.Key.foregroundColor : UIColor.lightGray,
@@ -50,6 +44,14 @@ extension LoginViewController {
         let forgotButtonTitle = NSMutableAttributedString(string:"Forgot?", attributes:attrs)
         attributedString.append(forgotButtonTitle)
         forgotButton.setAttributedTitle(attributedString, for: .normal)
+        
+        emailView.layer.cornerRadius = 7
+        emailView.layer.borderWidth = 1
+        emailView.layer.borderColor = UIColor("#FFE6E6").cgColor
+        
+        passwordView.layer.cornerRadius = 7
+        passwordView.layer.borderWidth = 1
+        passwordView.layer.borderColor = UIColor("#FFE6E6").cgColor
     }
     
 }

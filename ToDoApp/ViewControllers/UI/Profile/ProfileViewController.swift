@@ -8,11 +8,33 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "PROFILE"
     }
 
+}
+
+extension ProfileViewController {
+    
+    override func setUpUI() {
+        self.navigationItem.title = "PROFILE"
+        showMenuButton()
+        showEditButton()
+    }
+    
+}
+
+extension ProfileViewController {
+    
+    func showEditButton() {
+        let button = UIBarButtonItem(image: UIImage(named: "ic_edit_profile"), style: .plain, target: self, action: #selector(self.editButtonPressed(_:)))
+        self.navigationItem.rightBarButtonItem = button
+    }
+    
+    @IBAction func editButtonPressed(_ sender: AnyObject) {
+        
+    }
+    
 }

@@ -8,13 +8,20 @@
 
 import UIKit
 
-class AlertsViewController: UIViewController {
+class AlertsViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationItem.title = "NOTIFICATIONS"
-
     }
 
+}
+
+extension AlertsViewController {
+    
+    override func setUpUI() {
+        self.navigationItem.title = "NOTIFICATIONS"
+        showMenuButton()
+        showSearchButton()
+    }
+    
 }
