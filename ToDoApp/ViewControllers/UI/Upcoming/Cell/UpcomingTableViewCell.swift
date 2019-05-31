@@ -1,14 +1,14 @@
 //
-//  TodayTableViewCell.swift
+//  UpcomingTableViewCell.swift
 //  ToDoApp
 //
-//  Created by Cao Nhat Minh on 5/30/19.
+//  Created by Cao Nhat Minh on 5/31/19.
 //  Copyright © 2019 Cao Nhat Minh. All rights reserved.
 //
 
 import UIKit
 
-class TodayTableViewCell: UITableViewCell {
+class UpcomingTableViewCell: UITableViewCell {
     
     @IBOutlet weak var checkbox: CheckBox!
     @IBOutlet weak var titleLabel: UILabel!
@@ -24,11 +24,11 @@ class TodayTableViewCell: UITableViewCell {
     
 }
 
-extension TodayTableViewCell {
+extension UpcomingTableViewCell {
     
     func setData(_ task: Task) {
         titleLabel.text = task.name
-        checkbox.isChecked = task.isSelected
+        //checkbox.isChecked = task.isSelected
     }
     
 }

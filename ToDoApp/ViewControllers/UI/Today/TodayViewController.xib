@@ -17,6 +17,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TodayViewController" customModule="ToDoApp" customModuleProvider="target">
             <connections>
+                <outlet property="taskTableView" destination="LOZ-x8-rVT" id="OU7-9C-Py5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,7 +26,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Q2-Ec-Iev">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Q2-Ec-Iev" userLabel="Header View">
                     <rect key="frame" x="0.0" y="44" width="414" height="110"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_banner" translatesAutoresizingMaskIntoConstraints="NO" id="gwa-zF-zUW">

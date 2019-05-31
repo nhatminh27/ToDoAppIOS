@@ -45,6 +45,12 @@
 		DD5135BC229CF67300F95D3E /* AvenirLTStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = DD5135B0229CF67300F95D3E /* AvenirLTStd-Book.otf */; };
 		DD5135BD229CF67300F95D3E /* AvenirLTStd-LightOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = DD5135B1229CF67300F95D3E /* AvenirLTStd-LightOblique.otf */; };
 		DD5135BE229CF67300F95D3E /* AvenirLTStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = DD5135B2229CF67300F95D3E /* AvenirLTStd-Medium.otf */; };
+		DD83F14E22A0C63E00D8EEC9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83F14D22A0C63E00D8EEC9 /* Constants.swift */; };
+		DD83F15222A10C2400D8EEC9 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83F15122A10C2400D8EEC9 /* Task.swift */; };
+		DD83F15722A118B000D8EEC9 /* UpcomingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83F15522A118B000D8EEC9 /* UpcomingTableViewCell.swift */; };
+		DD83F15822A118B000D8EEC9 /* UpcomingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD83F15622A118B000D8EEC9 /* UpcomingTableViewCell.xib */; };
+		DD83F15B22A1229400D8EEC9 /* UpcomingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83F15A22A1229400D8EEC9 /* UpcomingHeaderView.swift */; };
+		DD83F15D22A122DB00D8EEC9 /* UpcomingHeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD83F15C22A122DB00D8EEC9 /* UpcomingHeaderViewCell.xib */; };
 		DDF32754229D352700E2750E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF32752229D352700E2750E /* TodayViewController.swift */; };
 		DDF32755229D352700E2750E /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF32753229D352700E2750E /* TodayViewController.xib */; };
 		DDF32759229D3A8800E2750E /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF32757229D3A8800E2750E /* UpcomingViewController.swift */; };
@@ -98,6 +104,12 @@
 		DD5135B0229CF67300F95D3E /* AvenirLTStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Book.otf"; sourceTree = "<group>"; };
 		DD5135B1229CF67300F95D3E /* AvenirLTStd-LightOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-LightOblique.otf"; sourceTree = "<group>"; };
 		DD5135B2229CF67300F95D3E /* AvenirLTStd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Medium.otf"; sourceTree = "<group>"; };
+		DD83F14D22A0C63E00D8EEC9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DD83F15122A10C2400D8EEC9 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		DD83F15522A118B000D8EEC9 /* UpcomingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingTableViewCell.swift; sourceTree = "<group>"; };
+		DD83F15622A118B000D8EEC9 /* UpcomingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingTableViewCell.xib; sourceTree = "<group>"; };
+		DD83F15A22A1229400D8EEC9 /* UpcomingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingHeaderView.swift; sourceTree = "<group>"; };
+		DD83F15C22A122DB00D8EEC9 /* UpcomingHeaderViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingHeaderViewCell.xib; sourceTree = "<group>"; };
 		DDF32752229D352700E2750E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		DDF32753229D352700E2750E /* TodayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayViewController.xib; sourceTree = "<group>"; };
 		DDF32757229D3A8800E2750E /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
@@ -218,6 +230,8 @@
 		DD513562229CDE6C00F95D3E /* ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
+				DD83F15022A10C1000D8EEC9 /* Model */,
+				DD83F14C22A0C62600D8EEC9 /* Constants */,
 				DD04518F229E852700307749 /* Extensions */,
 				DD045182229E41B500307749 /* Custom */,
 				DD5135A5229CF63D00F95D3E /* Assets */,
@@ -307,6 +321,40 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		DD83F14C22A0C62600D8EEC9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DD83F14D22A0C63E00D8EEC9 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DD83F15022A10C1000D8EEC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD83F15122A10C2400D8EEC9 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD83F15422A1161D00D8EEC9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DD83F15522A118B000D8EEC9 /* UpcomingTableViewCell.swift */,
+				DD83F15622A118B000D8EEC9 /* UpcomingTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DD83F15922A121FE00D8EEC9 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				DD83F15A22A1229400D8EEC9 /* UpcomingHeaderView.swift */,
+				DD83F15C22A122DB00D8EEC9 /* UpcomingHeaderViewCell.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		DDF32751229D351500E2750E /* Today */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +368,8 @@
 		DDF32756229D3A6800E2750E /* Upcoming */ = {
 			isa = PBXGroup;
 			children = (
+				DD83F15922A121FE00D8EEC9 /* Header */,
+				DD83F15422A1161D00D8EEC9 /* Cell */,
 				DDF32757229D3A8800E2750E /* UpcomingViewController.swift */,
 				DDF32758229D3A8800E2750E /* UpcomingViewController.xib */,
 			);
@@ -411,6 +461,7 @@
 				DDF32755229D352700E2750E /* TodayViewController.xib in Resources */,
 				DD04518D229E790B00307749 /* LeftMenuViewController.xib in Resources */,
 				DD5135B7229CF67300F95D3E /* AvenirLTStd-Black.otf in Resources */,
+				DD83F15822A118B000D8EEC9 /* UpcomingTableViewCell.xib in Resources */,
 				DD5135B9229CF67300F95D3E /* AvenirLTStd-Light.otf in Resources */,
 				DD513585229CE4AC00F95D3E /* LoginViewController.xib in Resources */,
 				DDF3275F229D3AAE00E2750E /* AlertsViewController.xib in Resources */,
@@ -420,6 +471,7 @@
 				DD0F5896229F8C1900F00133 /* LeftMenuTableViewCell.xib in Resources */,
 				DD51356B229CDE6E00F95D3E /* Assets.xcassets in Resources */,
 				DD5135BA229CF67300F95D3E /* AvenirLTStd-Oblique.otf in Resources */,
+				DD83F15D22A122DB00D8EEC9 /* UpcomingHeaderViewCell.xib in Resources */,
 				DD5135B6229CF67300F95D3E /* AvenirLTStd-HeavyOblique.otf in Resources */,
 				DD5135BE229CF67300F95D3E /* AvenirLTStd-Medium.otf in Resources */,
 				DD5135BC229CF67300F95D3E /* AvenirLTStd-Book.otf in Resources */,
@@ -502,10 +554,12 @@
 			files = (
 				DD045191229E854100307749 /* UIViewController+Extension.swift in Sources */,
 				DD045193229E8A3A00307749 /* MainViewController.swift in Sources */,
+				DD83F15722A118B000D8EEC9 /* UpcomingTableViewCell.swift in Sources */,
 				DD0F589A229F9B0700F00133 /* UIView+Extension.swift in Sources */,
 				DD0F5898229F97C500F00133 /* UITableView+Extension.swift in Sources */,
 				DD045184229E41D500307749 /* IrregularityBasicContentView.swift in Sources */,
 				DD0F58A0229FB58300F00133 /* BaseViewController.swift in Sources */,
+				DD83F14E22A0C63E00D8EEC9 /* Constants.swift in Sources */,
 				DD0F58A3229FB75200F00133 /* UIAlertController+Extension.swift in Sources */,
 				DDF32759229D3A8800E2750E /* UpcomingViewController.swift in Sources */,
 				DD5135A3229CF46F00F95D3E /* RegisterViewController.swift in Sources */,
@@ -513,8 +567,10 @@
 				DD0F58A7229FD44600F00133 /* TodayTableViewCell.swift in Sources */,
 				DDF3275E229D3AAE00E2750E /* AlertsViewController.swift in Sources */,
 				DD513584229CE4AC00F95D3E /* LoginViewController.swift in Sources */,
+				DD83F15B22A1229400D8EEC9 /* UpcomingHeaderView.swift in Sources */,
 				DD045186229E425500307749 /* BouncesContentView.swift in Sources */,
 				DD0F58AA229FE54500F00133 /* CheckBox.swift in Sources */,
+				DD83F15222A10C2400D8EEC9 /* Task.swift in Sources */,
 				DD0F5895229F8C1900F00133 /* LeftMenuTableViewCell.swift in Sources */,
 				DD0F58A1229FB58300F00133 /* TabBarViewController.swift in Sources */,
 				DD04518C229E790B00307749 /* LeftMenuViewController.swift in Sources */,

@@ -9,6 +9,7 @@
 import UIKit
 import ESTabBarController_swift
 import SideMenu
+import EachNavigationBar
 
 class MainViewController: ESTabBarController {
     
@@ -39,10 +40,13 @@ class MainViewController: ESTabBarController {
         let today = TodayViewController()
         today.tabBarItem = ESTabBarItem(IrregularityBasicContentView(), title: nil, image: UIImage(named: "ic_list"), selectedImage: UIImage(named: "ic_list_selected"))
         let navToday = UINavigationController(rootViewController: today)
+        navToday.navigation.configuration.isEnabled = true
+        
         
         let upcoming = UpcomingViewController()
         upcoming.tabBarItem = ESTabBarItem(IrregularityBasicContentView(), title: nil, image: UIImage(named: "ic_clock"), selectedImage: UIImage(named: "ic_clock_selected"))
         let navUpcoming = UINavigationController(rootViewController: upcoming)
+        navUpcoming.navigation.configuration.isEnabled = true
         
         let plus = UIViewController()
         plus.tabBarItem = ESTabBarItem(IrregularityContentView(), title: nil, image: UIImage(named: "ic_plus"), selectedImage: UIImage(named: "ic_plus"))
@@ -50,10 +54,12 @@ class MainViewController: ESTabBarController {
         let alert = AlertsViewController()
         alert.tabBarItem = ESTabBarItem(IrregularityBasicContentView(), title: nil, image: UIImage(named: "ic_bell"), selectedImage: UIImage(named: "ic_bell_selected"))
         let navAlert = UINavigationController(rootViewController: alert)
+        navAlert.navigation.configuration.isEnabled = true
         
         let profile = ProfileViewController()
         profile.tabBarItem = ESTabBarItem(IrregularityBasicContentView(), title: nil, image: UIImage(named: "ic_people"), selectedImage: UIImage(named: "ic_profile_selected"))
         let navProfile = UINavigationController(rootViewController: profile)
+        navProfile.navigation.configuration.isEnabled = true
         
         self.viewControllers = [navToday, navUpcoming, plus, navAlert, navProfile]
     }

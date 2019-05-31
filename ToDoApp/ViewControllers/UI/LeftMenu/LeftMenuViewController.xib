@@ -13,6 +13,9 @@
         <array key="AvenirLTStd-Black.otf">
             <string>AvenirLTStd-Black</string>
         </array>
+        <array key="AvenirLTStd-Book.otf">
+            <string>AvenirLTStd-Book</string>
+        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeftMenuViewController" customModule="ToDoApp" customModuleProvider="target">
@@ -74,16 +77,24 @@
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KnF-04-P4J">
-                    <rect key="frame" x="0.0" y="137" width="414" height="709"/>
+                    <rect key="frame" x="0.0" y="137" width="414" height="679"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2017 Candy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQ1-Mh-eHm">
+                    <rect key="frame" x="31.999999999999993" y="832" width="90.333333333333314" height="14"/>
+                    <fontDescription key="fontDescription" name="AvenirLTStd-Book" family="Avenir LT Std" pointSize="14"/>
+                    <color key="textColor" red="0.14117647058823529" green="0.23137254901960785" blue="0.41960784313725491" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="bQ1-Mh-eHm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="5y0-OH-WKX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="liG-sq-Fs9" secondAttribute="trailing" id="8D3-iK-My3"/>
                 <constraint firstItem="KnF-04-P4J" firstAttribute="top" secondItem="liG-sq-Fs9" secondAttribute="bottom" constant="16" id="HsB-KC-Mxu"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="KnF-04-P4J" secondAttribute="bottom" constant="16" id="N5s-r4-7wK"/>
+                <constraint firstItem="bQ1-Mh-eHm" firstAttribute="top" secondItem="KnF-04-P4J" secondAttribute="bottom" constant="16" id="XdD-oo-bzZ"/>
                 <constraint firstItem="liG-sq-Fs9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZCM-0I-xS9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bQ1-Mh-eHm" secondAttribute="bottom" constant="16" id="aYB-2W-9b0"/>
                 <constraint firstItem="KnF-04-P4J" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fW8-5D-fwA"/>
                 <constraint firstAttribute="trailing" secondItem="qSs-tP-Bgx" secondAttribute="trailing" id="jNX-HJ-h7l"/>
                 <constraint firstItem="liG-sq-Fs9" firstAttribute="top" secondItem="qSs-tP-Bgx" secondAttribute="bottom" id="nsX-nM-dqW"/>

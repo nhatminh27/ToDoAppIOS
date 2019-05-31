@@ -36,6 +36,7 @@ extension LeftMenuViewController {
     private func setUpUI() {
         self.avatarImageView.layer.cornerRadius = self.avatarImageView.bounds.height * 0.5
         self.avatarImageView.clipsToBounds = true
+        self.avatarImageView.image = UIImage(named: "ic_avatar")
     }
     
     private func setupMenuView() {

@@ -19,9 +19,17 @@ class ProfileViewController: BaseViewController {
 extension ProfileViewController {
     
     override func setUpUI() {
-        self.navigationItem.title = "PROFILE"
         showMenuButton()
         showEditButton()
+        setupNavigationBar()
+    }
+    
+    private func setupNavigationBar() {
+        navigation.item.title = "PROFILE"
+        navigation.bar.titleTextAttributes = navTitleTextAttributes as [NSAttributedString.Key : Any]
+        navigation.bar.isShadowHidden = true
+        navigation.bar.backgroundColor = UIColor("#FFE6E6")
+        navigation.bar.tintColor = UIColor("#243B6B")
     }
     
 }

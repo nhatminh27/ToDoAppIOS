@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirLTStd-Book.otf">
+            <string>AvenirLTStd-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jQ0-Yw-0py" customClass="UpcomingTableViewCell" customModule="ToDoApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jQ0-Yw-0py" id="ZXh-B8-jMF">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="118.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVw-hl-Ltg" userLabel="Checkbox Button" customClass="CheckBox" customModule="ToDoApp" customModuleProvider="target">
+                        <rect key="frame" x="32" y="42.5" width="30" height="34"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGW-ar-GnM" userLabel="Title Label">
+                        <rect key="frame" x="94" y="52.5" width="34" height="14"/>
+                        <fontDescription key="fontDescription" name="AvenirLTStd-Book" family="Avenir LT Std" pointSize="14"/>
+                        <color key="textColor" red="0.14117647059999999" green="0.23137254900000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EVw-hl-Ltg" firstAttribute="leading" secondItem="ZXh-B8-jMF" secondAttribute="leading" constant="32" id="9m4-Za-hnX"/>
+                    <constraint firstItem="YGW-ar-GnM" firstAttribute="centerY" secondItem="ZXh-B8-jMF" secondAttribute="centerY" id="FBk-cl-Ozt"/>
+                    <constraint firstItem="EVw-hl-Ltg" firstAttribute="centerY" secondItem="ZXh-B8-jMF" secondAttribute="centerY" id="WqW-EJ-H9r"/>
+                    <constraint firstItem="YGW-ar-GnM" firstAttribute="leading" secondItem="EVw-hl-Ltg" secondAttribute="trailing" constant="32" id="cPh-E3-KLa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="edz-dm-oQx"/>
+            <connections>
+                <outlet property="checkbox" destination="EVw-hl-Ltg" id="M70-tP-IEb"/>
+                <outlet property="titleLabel" destination="YGW-ar-GnM" id="xQ0-EP-xDE"/>
+            </connections>
+            <point key="canvasLocation" x="177.536231884058" y="175.11160714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

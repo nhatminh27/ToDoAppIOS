@@ -8,6 +8,7 @@
 
 import UIKit
 import SideMenu
+import EachNavigationBar
 
 class BaseViewController: UIViewController {
 
@@ -66,13 +67,25 @@ extension BaseViewController {
 extension BaseViewController {
     
     @objc func showMenuButton() {
-        let button = UIBarButtonItem(image: UIImage(named: "ic_menu"), style: .plain, target: self, action: #selector(self.menuButtonPressed(_:)))
-        self.navigationItem.leftBarButtonItem = button
+        //let button = UIBarButtonItem(image: UIImage(named: "ic_menu"), style: .plain, target: self, action:#selector(self.menuButtonPressed(_:)))
+        //self.navigationItem.leftBarButtonItem = button
+        self.navigation.item.leftBarButtonItem = UIBarButtonItem(
+            image: UIImage(named: "ic_menu"),
+            style: .plain,
+            target: self,
+            action: #selector(menuButtonPressed)
+        )
+        
     }
     
     @objc func showSearchButton() {
-        let button = UIBarButtonItem(image: UIImage(named: "ic_search"), style: .plain, target: self, action: nil)
-        self.navigationItem.rightBarButtonItem = button
+        //let button = UIBarButtonItem(image: UIImage(named: "ic_search"), style: .plain, target: self, action: nil)
+        //self.navigationItem.rightBarButtonItem = button
+        self.navigation.item.rightBarButtonItem = UIBarButtonItem(
+            image: UIImage(named: "ic_search"),
+            style: .plain,
+            target: self,
+            action: nil)
     }
 
     @objc func showBackButton() {

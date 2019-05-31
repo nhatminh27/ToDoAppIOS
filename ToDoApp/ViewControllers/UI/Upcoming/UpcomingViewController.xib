@@ -17,6 +17,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpcomingViewController" customModule="ToDoApp" customModuleProvider="target">
             <connections>
+                <outlet property="taskTableView" destination="4xy-ys-2Ft" id="U6f-L3-r3b"/>
                 <outlet property="view" destination="0ae-7a-bm4" id="tTB-7s-3pD"/>
             </connections>
         </placeholder>
@@ -54,12 +55,20 @@ tasks —</string>
                         <constraint firstItem="iYh-Z4-AK3" firstAttribute="leading" secondItem="my5-9j-yow" secondAttribute="leading" id="ohB-K4-PQt"/>
                     </constraints>
                 </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4xy-ys-2Ft" userLabel="Task Table View">
+                    <rect key="frame" x="0.0" y="170" width="414" height="676"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="EJA-PF-eSM" firstAttribute="bottom" secondItem="4xy-ys-2Ft" secondAttribute="bottom" constant="16" id="1g3-GT-GT3"/>
                 <constraint firstItem="my5-9j-yow" firstAttribute="top" secondItem="EJA-PF-eSM" secondAttribute="top" id="7Sc-6a-rxS"/>
+                <constraint firstItem="4xy-ys-2Ft" firstAttribute="top" secondItem="my5-9j-yow" secondAttribute="bottom" constant="16" id="7XX-g1-Xq1"/>
                 <constraint firstItem="EJA-PF-eSM" firstAttribute="trailing" secondItem="my5-9j-yow" secondAttribute="trailing" id="ErH-nt-T3u"/>
+                <constraint firstItem="EJA-PF-eSM" firstAttribute="trailing" secondItem="4xy-ys-2Ft" secondAttribute="trailing" id="Fiw-eK-eW5"/>
                 <constraint firstItem="my5-9j-yow" firstAttribute="leading" secondItem="EJA-PF-eSM" secondAttribute="leading" id="JRw-FM-GuE"/>
+                <constraint firstItem="4xy-ys-2Ft" firstAttribute="leading" secondItem="EJA-PF-eSM" secondAttribute="leading" id="YuB-QO-2MB"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="EJA-PF-eSM"/>
             <point key="canvasLocation" x="34.782608695652179" y="34.821428571428569"/>

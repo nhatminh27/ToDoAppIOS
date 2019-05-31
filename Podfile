@@ -8,11 +8,12 @@ target 'ToDoApp' do
   pod 'SnapKit', '~> 5.0.0'
   pod 'UIColor_Hex_Swift', '~> 5.1.0'
   pod 'SwiftLint'
-  pod 'EachNavigationBar'
   pod 'SwiftyUserDefaults', '~> 4.0'
   pod 'SwiftyJSON', '~> 4.3.0'
-  pod "ESTabBarController-swift"
+  pod 'ESTabBarController-swift'
   pod 'SideMenu'
   pod 'pop', '~> 1.0'
   pod 'DLRadioButton', '~> 1.4'
+  pod 'EachNavigationBar', '~> 1.12.0'
+  
 end
